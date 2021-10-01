@@ -20,9 +20,9 @@ public class plane implements Serializable {
     private String comfort;
     private String firstClass;
     private String business;
-    private String planeType;
+    private PlaneSize planeType;
 
-    public plane(String flightId, String mainCabin, String economy, String comfort, String firstClass, String business, String planeType) {
+    public plane(String flightId, String mainCabin, String economy, String comfort, String firstClass, String business, PlaneSize planeType) {
         this.flightId = flightId;
         this.mainCabin = mainCabin;
         this.economy = economy;
@@ -132,7 +132,7 @@ public class plane implements Serializable {
      * This gets plane type
      * @return planeType
      * **/
-    public String getPlaneType() {
+    public PlaneSize getPlaneType() {
         return planeType;
     }
 
@@ -140,7 +140,7 @@ public class plane implements Serializable {
      * This sets plane type
      * @param planeType
      * **/
-    public void setPlaneType(String planeType) {
+    public void setPlaneType(PlaneSize planeType) {
         this.planeType = planeType;
     }
 
