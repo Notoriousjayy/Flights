@@ -5,6 +5,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+/**
+ * This class is the entity class
+ * @author Jordan
+ * **/
 @Entity
 @Table(name="plane")
 public class plane implements Serializable {
