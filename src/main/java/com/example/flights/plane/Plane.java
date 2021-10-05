@@ -1,5 +1,6 @@
 package com.example.flights.plane;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -11,7 +12,7 @@ import java.io.Serializable;
  * **/
 @Entity
 @Table(name="plane")
-public class plane implements Serializable {
+public class Plane implements Serializable {
 
     @Id
     private String flightId;
@@ -22,7 +23,10 @@ public class plane implements Serializable {
     private String business;
     private PlaneSize planeType;
 
-    public plane(String flightId, String mainCabin, String economy, String comfort, String firstClass, String business, PlaneSize planeType) {
+    public Plane() {
+    }
+
+    public Plane(String flightId, String mainCabin, String economy, String comfort, String firstClass, String business, PlaneSize planeType) {
         this.flightId = flightId;
         this.mainCabin = mainCabin;
         this.economy = economy;
